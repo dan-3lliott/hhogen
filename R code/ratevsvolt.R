@@ -5,6 +5,6 @@ rates <- c(2.4, 12, 35.6, 73.2)
 
 dframe <- data.frame(voltage, rates)
 
-plot(dframe, col = "dodgerblue")
+plot(dframe, col = "dodgerblue", type = "l", xlab = "Voltage (V)", ylab = "Rate of Oxyhydrogen Gas Production (ml/min)", pch = 19, main = "Input Voltage vs Rate of Gas Production")
 
 dev.off()
