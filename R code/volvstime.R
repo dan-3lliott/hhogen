@@ -1,0 +1,25 @@
+png(file = "E:\\TEMP BACKUP FOR MW\\TEMPDOCS\\hhogen\\R code\\volumevstime.png")
+
+time <- c(0, 1, 2, 3, 4, 5)
+twovolthvolume <- c(0, 4, 5, 7, 9, 12)
+fourvolthvolume <- c(0, 12, 26, 40, 48, 60)
+sixvolthvolume <- c(0, 30, 70, 106, 142, 178)
+eightvolthvolume <- c(0, 50, 129, 208, 287, 366)
+range <- c(0, 100)
+legendlabels <- c("2V", "4V", "6V", "8V")
+colors <- c("firebrick1", "chartreuse", "dodgerblue", "gold")
+
+plot(time, col = "white", type = "l", xlab = "Time (min)", ylab = "Volume of Hydrogen Gas Produced (ml)", main = "Hydrogen Gas Produced vs. Time", ylim = range, xlim = c(1, 6), xaxt = "n")
+axis(1, at=1:6, labels = time)
+lines(twovolthvolume, type = "l", col = colors[1], lwd = 2.5)
+points(twovolthvolume, pch = 19, col = colors[1])
+lines(fourvolthvolume, type = "l", col = colors[2], lwd = 2.5)
+points(fourvolthvolume, pch = 19, col = colors[2])
+lines(sixvolthvolume, type = "l", col = colors[3], lwd = 2.5)
+points(sixvolthvolume, pch = 19, col = colors[3])
+lines(eightvolthvolume, type = "l", col = colors[4], lwd = 2.5)
+points(eightvolthvolume, pch = 19, col = colors[4])
+
+legend(5, 100, legendlabels, lty = c(1, 1), lwd = c(2.5, 2.5), col = colors)
+
+dev.off()
