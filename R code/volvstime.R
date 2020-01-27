@@ -6,7 +6,7 @@ fourvolthvolume <- c(0, 12, 26, 40, 48, 60)
 sixvolthvolume <- c(0, 30, 70, 106, 142, 178)
 eightvolthvolume <- c(0, 50, 129, 208, 287, 366)
 range <- c(0, 100)
-legendlabels <- c("2V", "4V", "6V", "8V")
+legendlabels <- c("1.25A", "2.50A", "3.75A", "5.00A")
 colors <- c("firebrick1", "chartreuse", "dodgerblue", "gold")
 
 plot(time, col = "white", type = "l", xlab = "Time (min)", ylab = "Volume of Oxyhydrogen Gas Produced (ml)", main = "Oxydrogen Gas Produced vs. Time", ylim = range, xlim = c(1, 6), xaxt = "n")
