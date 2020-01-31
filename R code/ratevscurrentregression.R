@@ -12,6 +12,6 @@ print(summary(pwrreg))
 png(file = "ratevscurrentregression.png")
 
 plot(log(current), log(rates), col = "dodgerblue", pch = 19, xlab = "log(Current) (A)", ylab = "log(Rate of Oxyhydrogen Gas Production) (ml/min)", main = "Current vs Rate of Gas Production (Power Regression)")
-abline(pwrreg, col = "firebrick1")
+abline(pwrreg, col = "firebrick1", lwd = 2.5)
 
 dev.off()
