@@ -13,7 +13,7 @@ print(summary(logreg))
 
 png(file = "ratevscurrentregression.png")
 
-plot(log(current), rates, col = "dodgerblue", pch = 19, xlab = "log(Current) (A)", ylab = "Rate of Oxyhydrogen Gas Production (ml/min)", main = "Current vs Rate of Gas Production (Logarithmic Regression)", yaxt = "n")
+plot(log(current), rates, col = "dodgerblue", pch = 19, xlab = "log(Current) (A)", ylab = "Rate of Oxyhydrogen Gas Production (ml/min)", main = "Rate of Oxyhydrogen Gas Production vs. Current\n(Logarithmic Regression)", yaxt = "n")
 axis(2, seq(1.75, 3.25, by = 0.25))
 abline(logreg, col = "firebrick1", lwd = 2.5)
 

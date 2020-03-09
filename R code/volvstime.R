@@ -10,7 +10,7 @@ range <- c(0, 100)
 legendlabels <- c("4.0A", "8.0A", "12.0A", "16.0A", "20.0A")
 colors <- c("firebrick1", "gold", "chartreuse", "dodgerblue", "darkviolet")
 
-plot(time, col = "white", type = "l", xlab = "Time (sec)", ylab = "Average Volume of Oxyhydrogen Gas Produced (ml)", main = "Oxydrogen Gas Produced vs. Time", ylim = range, xlim = c(1, 6), xaxt = "n")
+plot(time, col = "white", type = "l", xlab = "Time (sec)", ylab = "Average Volume of Oxyhydrogen Gas Produced (ml)", main = "Average Volume of Oxydrogen Gas Produced vs. Time", ylim = range, xlim = c(1, 6), xaxt = "n")
 axis(1, at=1:6, labels = time)
 lines(fouramphvolume, type = "l", col = colors[1], lwd = 2.5)
 points(fouramphvolume, pch = 19, col = colors[1])
@@ -23,6 +23,6 @@ points(sixteenamphvolume, pch = 19, col = colors[4])
 lines(twentyamphvolume, type = "l", col = colors[5], lwd = 2.5)
 points(twentyamphvolume, pch = 19, col = colors[5])
 
-legend(5, 100, legendlabels, lty = c(1, 1), lwd = c(2.5, 2.5), col = colors)
+legend(5, 100, rev(legendlabels), lty = c(1, 1), lwd = c(2.5, 2.5), col = rev(colors))
 
 dev.off()
