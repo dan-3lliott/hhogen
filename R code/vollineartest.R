@@ -1,0 +1,18 @@
+time <- c(5, 10, 15, 20, 25, 30)
+fouramphvolume <- c(5.67, 12.67, 22.67, 34.67, 44.67, 52)
+eightamphvolume <- c(9.33, 21.33, 33.67, 46.67, 59.33, 73.33)
+twelveamphvolume <- c(8.33, 23.67, 41, 57, 71.33, 86.33)
+sixteenamphvolume <- c(14, 29.33, 46.33, 62, 80, 93.33)
+twentyamphvolume <- c(18, 35, 52.67, 69.67, 88.33, 98.67)
+
+fourampreg <- lm(fouramphvolume~time)
+eightampreg <- lm(eightamphvolume~time)
+twelveampreg <- lm(twelveamphvolume~time)
+sixteenampreg <- lm(sixteenamphvolume~time)
+twentyampreg <- lm(twentyamphvolume~time)
+
+print(summary(fourampreg))
+print(summary(eightampreg))
+print(summary(twelveampreg))
+print(summary(sixteenampreg))
+print(summary(twentyampreg))
